@@ -1,0 +1,52 @@
+﻿<Page x:Class="Submission_of_Applications_Осенников.Pages.Speciality"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Submission_of_Applications_Осенников.Pages"
+      mc:Ignorable="d" 
+            MinHeight="608" MinWidth="840"
+      Title="Speciality" Height="608">
+
+    <Grid Background="#F8F9FA">
+        <Grid Margin="0,0,0,523" Background="White">
+            <Image HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top"
+           Width="40" Source="/Images/aviat.png"/>
+            <Label Content="Пермского авиационного техникума им. А.Д. Швецова" HorizontalAlignment="Left"
+           Margin="55,24,0,0" VerticalAlignment="Top"/>
+            <Label Content="Электронная приемная компания" HorizontalAlignment="Left" Margin="55,1,0,0"
+           VerticalAlignment="Top" FontWeight="Bold" FontSize="19"/>
+        </Grid>
+        <Grid Margin="0,66,0,0">
+            <Label Content="Специальность" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <Label Content="Выберите специальность, на которой желаете учиться:" HorizontalAlignment="Left" 
+           Margin="10,41,0,0" VerticalAlignment="Top"/>
+            <Label Content="Можете выбрать несколько специальностей:" HorizontalAlignment="Left" Background="{x:Null}" FontSize="10"
+           Margin="20,67,0,0" VerticalAlignment="Top" Foreground="Red"/>
+            <CheckBox x:Name="one" Content="12.02.01 Авиационные приборы и комплексы" HorizontalAlignment="Left" Margin="22,91,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="two" Content="15.02.09 Аддитивные технологии" HorizontalAlignment="Left" Margin="22,106,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="three" Content="09.02.07 Информационные системы и программирование (Программист)" HorizontalAlignment="Left" Margin="22,120,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="four" Content="09.02.07 Информационные системы и программирование (Разработчик веб и мультимедийных приложений)" HorizontalAlignment="Left" Margin="22,135,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="five" Content="09.02.01 Компьютерные системы и комплексы" HorizontalAlignment="Left" Margin="22,150,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="six" Content="22.02.05 Литейное производство черных и цветных металлов" HorizontalAlignment="Left" Margin="22,165,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="seven" Content="15.02.10 Мехатроника и мобильная робототехника" HorizontalAlignment="Left" Margin="22,180,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="eight" Content="09.02.05 Прикладная информатика (по отраслям)" HorizontalAlignment="Left" Margin="22,195,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="nine" Content="24.02.03 Производство авиационных двигателей" HorizontalAlignment="Left" Margin="22,212,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="ten" Content="12.02.08 Радиоэлектронные приборные устройства" HorizontalAlignment="Left" Margin="22,227,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="eleven" Content="15.02.08 Технология машиностроения" HorizontalAlignment="Left" Margin="22,242,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="twelve" Content="15.02.15 Технология металлообрабатывающего производства" HorizontalAlignment="Left" Margin="22,257,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="thirteen" Content="27.02.07 Управление качеством продукции, процессов и услуг" HorizontalAlignment="Left" Margin="22,272,0,0" VerticalAlignment="Top"/>
+            <Label Content="Среднее профессиональное образование получаю:" HorizontalAlignment="Left" 
+               Margin="10,297,0,0" VerticalAlignment="Top"/>
+            <Label Content="Выберите один из вариантов:" HorizontalAlignment="Left" Background="{x:Null}" FontSize="10"
+           Margin="20,325,0,0" VerticalAlignment="Top" Foreground="Red"/>
+            <RadioButton x:Name="first" Content="впервые" HorizontalAlignment="Left" Margin="20,363,0,0" VerticalAlignment="Top" GroupName="EducateFirst"/>
+            <RadioButton x:Name="notfirst" Content="не впервые" HorizontalAlignment="Left" Margin="20,348,0,0" VerticalAlignment="Top" GroupName="EducateFirst"/>
+            <CheckBox x:Name="confone" Content="С лицензией на право осуществления образовательной деятельности, свидетельством о государственной аккредитации,&#xD;&#xA;правилами приёма и правилами внутреннего распорядка обучающихся в данном образовательном учреждении, с Уставом&#xD;&#xA;Техникума ознакомлен(а)." HorizontalAlignment="Left" Margin="22,413,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="conftwo" Content="С датой представления оригиналов документов ознакомлен(а)" HorizontalAlignment="Left" Margin="22,476,0,0" VerticalAlignment="Top"/>
+            <Button Content="Продолжить" Click="Next" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="150" Height="25"/>
+            <Button Content="Назад" Click="Back" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="150" Height="25"/>
+        </Grid>
+    </Grid>
+</Page>
+

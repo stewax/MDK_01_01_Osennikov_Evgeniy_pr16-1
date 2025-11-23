@@ -1,0 +1,44 @@
+﻿<Page x:Class="Submission_of_Applications_Осенников.Pages.Status"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Submission_of_Applications_Осенников.Pages"
+      mc:Ignorable="d" 
+           MinHeight="490" MinWidth="840"
+      Title="Status">
+
+    <Grid Background="#F8F9FA">
+        <Grid Margin="0,0,0,429" Background="White">
+            <Image HorizontalAlignment="Left" Height="40" Margin="10,10,0,0" VerticalAlignment="Top"
+               Width="40" Source="/Images/aviat.png"/>
+            <Label Content="Пермского авиационного техникума им. А.Д. Швецова" HorizontalAlignment="Left"
+               Margin="55,24,0,0" VerticalAlignment="Top"/>
+            <Label Content="Электронная приемная компания" HorizontalAlignment="Left" Margin="55,1,0,0"
+               VerticalAlignment="Top" FontWeight="Bold" FontSize="19"/>
+        </Grid>
+        <Grid Margin="0,66,0,0">
+            <Label Content="Статус" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+            <Label Content="Имею статус:" HorizontalAlignment="Left" 
+               Margin="10,41,0,0" VerticalAlignment="Top"/>
+            <Label Content="Отметить при наличии" HorizontalAlignment="Left" Background="{x:Null}" FontSize="10"
+               Margin="20,67,0,0" VerticalAlignment="Top" Foreground="Red"/>
+            <CheckBox x:Name="child" Content="ребёнок-сирота/ребёнок, оставшийся без попечения родителей" HorizontalAlignment="Left" Margin="22,91,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="inval" Content="инвалид" HorizontalAlignment="Left" Margin="22,106,0,0" VerticalAlignment="Top"/>
+            <CheckBox x:Name="malob" Content="малообеспеченный" HorizontalAlignment="Left" Margin="22,120,0,0" VerticalAlignment="Top"/>
+            <Label Content="Приписное удостоверение (военный билет):" HorizontalAlignment="Left" 
+                   Margin="10,140,0,0" VerticalAlignment="Top"/>
+            <Label Content="Выберите один из вариантов:" HorizontalAlignment="Left" Background="{x:Null}" FontSize="10"
+               Margin="20,168,0,0" VerticalAlignment="Top" Foreground="Red"/>
+            <RadioButton x:Name="nothave" Content="не имею" HorizontalAlignment="Left" Margin="20,206,0,0" VerticalAlignment="Top" GroupName="IDCard"/>
+            <RadioButton x:Name="have" Content="имею (при нажатии данной кнопки необходимо ниже прикрепить сканы страниц документа)" HorizontalAlignment="Left" Margin="20,191,0,0" VerticalAlignment="Top" GroupName="IDCard"/>
+            <Label Content="Прикрепите сканы 1-ой и 2-ой страниц приписного удостоверения или военного билета (стр. 1-5, 8-13, 20-21) при их наличии" HorizontalAlignment="Left" Margin="10,231,0,0" VerticalAlignment="Top"/>
+            <Label Content="(Формат документов должен быть PNG, JPEG, или PDF, а максимальный размер каждого файла 5 МБ)" HorizontalAlignment="Left" Background="{x:Null}" FontSize="10"
+                   Margin="20,262,0,0" VerticalAlignment="Top" Foreground="Red"/>
+            <TextBox x:Name="Link" Height="24" Margin="22,290,117,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+            <Button Content="Выбрать..." Click="ChooseImage" HorizontalAlignment="Left" Margin="728,290,0,0" VerticalAlignment="Top" Width="102" Height="24"/>
+            <Button Content="Продолжить" Click="Next" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="150" Height="25"/>
+            <Button Content="Назад" Click="Back" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="150" Height="25"/>
+        </Grid>
+    </Grid>
+</Page>
